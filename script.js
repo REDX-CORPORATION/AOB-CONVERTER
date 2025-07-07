@@ -60,7 +60,7 @@ document.getElementById("copyBtn").addEventListener("click", () => {
   const code = cppOutput.textContent;
   navigator.clipboard.writeText(code).then(() => {
     const btn = document.getElementById("copyBtn");
-    btn.textContent = "✅ Copied!";
+    btn.textContent = "✔️ Copied!";
     setTimeout(() => {
       btn.textContent = "📋 Copy Code";
     }, 1500);
