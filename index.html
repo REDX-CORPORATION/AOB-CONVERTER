@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RED-X | AOB to C++ Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- RED-X Logo -->
+  <div class="brand-logo" title="RED-X Home">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Red_X_logo.svg/512px-Red_X_logo.svg.png" alt="RED-X Logo" />
+  </div>
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle" title="Toggle Dark/Light">
+    <img id="themeIcon" src="assets/icons/moon.png" alt="Toggle Theme" />
+  </button>
+
+  <!-- Card -->
+  <div class="card-container">
+    <div class="card" id="hover-card">
+      <h1>RED-X | AOB TO C++</h1>
+      <input id="aobInput" type="text" placeholder="Paste AOB like: A1 B2 00 4F ?? 1C ..." />
+      <div class="byte-count" id="byteCount">BYTE COUNT: 0</div>
+      <pre id="cppOutput">unsigned char aob[] = { };</pre>
+      <button id="copyBtn">📋 Copy Code</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">© 2025 RED-X CORPORATION</div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <p>Contact Us:
+      <a href="https://www.youtube.com/@redxofficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a> |
+      <a href="https://discord.gg/f7KPc9JyeY" target="_blank"><i class="fab fa-discord"></i> Discord</a> |
+      <a href="mailto:official.redxcorporation@gmail.com"><i class="fas fa-envelope"></i> Email</a> |
+      <a href="https://t.me/+OglBPVcrngY1OGQ9" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>

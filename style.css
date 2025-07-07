@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0b0c10;
+  --card-bg: rgba(15, 15, 15, 0.9);
+  --text: #ff003c;
+  --accent: #ff003c;
+  --box-glow: rgba(255, 0, 60, 0.5);
+  --shadow-hover: rgba(255, 0, 60, 0.7);
+  --input-bg: #000;
+  --text-soft: #ff5e5e;
+}
+
+html[data-theme="light"] {
+  --bg: #f1f1f1;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --text: #222;
+  --accent: #222;
+  --box-glow: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.15);
+  --input-bg: #fff;
+  --text-soft: #333;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding-bottom: 90px;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.card-container {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 850px;
+  z-index: 2;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 50px var(--box-glow);
+  backdrop-filter: blur(14px);
+  transition: transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 60px var(--shadow-hover), 0 0 120px var(--box-glow);
+}
+
+.card h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 20px var(--accent);
+}
+
+.card input,
+.card pre {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  background: var(--input-bg);
+  color: var(--accent);
+  font-size: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.byte-count {
+  font-size: 22px;
+  color: var(--text-soft);
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+button#copyBtn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+button#copyBtn:hover {
+  background: var(--accent);
+  color: var(--input-bg);
+  box-shadow: 0 0 20px var(--accent);
+}
+
+.footer {
+  position: static;
+  margin-top: 40px;
+  font-size: 18px;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 2;
+}
+
+.contact-section {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--card-bg);
+  padding: 15px 10px;
+  box-shadow: 0 -2px 15px var(--box-glow);
+  text-align: center;
+  z-index: 10;
+  color: var(--accent);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  filter: drop-shadow(0 0 8px var(--accent));
+}
+
+.contact-section p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-section a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #ff5050;
+  text-decoration: underline;
+}
+
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 3;
+  background: radial-gradient(circle, var(--accent), #6b0000);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
+}
+
+.brand-logo img {
+  width: 32px;
+  height: 32px;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  padding: 6px;
+}
+
+#themeToggle img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 0 4px var(--accent));
+  transition: filter 0.3s ease;
+}
+
+#themeToggle:hover img {
+  filter: drop-shadow(0 0 8px var(--accent));
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 30px;
+  }
+
+  .card h1 {
+    font-size: 28px;
+  }
+
+  .contact-section a {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+}
