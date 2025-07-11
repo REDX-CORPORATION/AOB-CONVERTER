@@ -74,9 +74,9 @@ Feel free to fork the repository, create a new branch, and submit a pull request
 
 ## 📫 Contact
 
-- **Email**: [your-email@example.com]  
-- **Telegram**: [@yourhandle]  
-- **Discord**: [discord.gg/yourserver]
+- **Email**: [official.redxcorporation@gmail.com](official.redxcorporation@gmail.com)  
+- **Telegram**: [NIGHT FURY](https://t.me/N8xFury)
+- **Discord**: [discord.gg](https://discord.gg/f7KPc9JyeY)
 
 ---
 
