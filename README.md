@@ -12,7 +12,7 @@ Perfectly suited for reverse engineering, memory scanning, and game hacking work
 - ✅ Instant conversion of AOB patterns to C++ byte arrays  
 - ✅ Byte count display for easy inspection  
 - ✅ One-click copy-to-clipboard functionality  
-- ✅ Sleek dark mode UI  
+- ✅ Light & dark mode UI  
 - ✅ 100% client-side — no installation, no dependencies  
 
 ---
